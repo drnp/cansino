@@ -1,0 +1,31 @@
+%%{init: {"theme":"base","themeVariables":{"primaryColor":"#2563EB","primaryBorderColor":"#1E40AF","tertiaryColor":"#ECFDF5","lineColor":"#64748B","fontFamily":"Inter, PingFang SC","fontSize":"11px"}} }%%
+flowchart LR
+    subgraph L1["协同层"]
+      direction TB
+      A1["门户"]
+      A2["OA/飞书"]
+    end
+    subgraph L2["业务系统群"]
+      direction TB
+      B1["SAP·MES·LIMS"]
+      B2["WMS·QMS·SCADA"]
+    end
+    subgraph L3["能力层"]
+      direction TB
+      C1["数据治理<br/>主数据·汇聚·BI"]
+      C2["AI基建<br/>能力平台·网关·RPA"]
+    end
+    subgraph L4["私有云基座"]
+      direction TB
+      D1["容器/虚拟化"]
+      D2["安全·加密·灾备·审计"]
+    end
+    subgraph L5["配套"]
+      E1["规范·培训"]
+    end
+    L1 --> L2 --> L3 --> L4 --> L5
+    style L1 fill:#fff,stroke:#E2E8F0,stroke-width:1px
+    style L2 fill:#fff,stroke:#E2E8F0,stroke-width:1px
+    style L3 fill:#F0F7FF,stroke:#1E40AF,stroke-width:1.4px
+    style L4 fill:#ECFDF5,stroke:#0E9F6E,stroke-width:1.4px
+    style L5 fill:#F8FAFC,stroke:#E2E8F0,stroke-width:1px

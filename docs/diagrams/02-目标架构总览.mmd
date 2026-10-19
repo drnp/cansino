@@ -1,0 +1,57 @@
+flowchart TB
+    subgraph L1["协同层"]
+        EP["企业门户"]
+        OA["OA协同办公"]
+        FS["飞书"]
+        EXT["外部应用"]
+    end
+
+    subgraph L2["现有业务系统群（已部署）"]
+        SAP["SAP"]
+        MES["MES"]
+        LIMS["LIMS"]
+        WMS["WMS"]
+        QMS["QMS"]
+        SCADA["SCADA"]
+        CRM["CRM"]
+        OMS["OMS"]
+        OTHER["...其他业务系统"]
+    end
+
+    subgraph L3["新建能力层"]
+        subgraph DG["数据治理 + BI 平台"]
+            MDM["主数据统一"]
+            DW["数据汇聚"]
+            KPI["指标中心"]
+            BI["经营看板"]
+        end
+        subgraph AI["AI 基建"]
+            AIP["AI能力平台"]
+            ATOM["原子能力封装"]
+            GW["大模型网关"]
+            RPA["流程自动化"]
+        end
+    end
+
+    subgraph ESB["企业服务总线 ESB"]
+    end
+
+    subgraph L4["私有云基座"]
+        K8S["容器化/虚拟化"]
+        NET["网络安全"]
+        ENC["数据加密"]
+        DR["灾备恢复"]
+        AUDIT["日志审计"]
+        BASTION["堡垒机"]
+    end
+
+    subgraph L5["配套体系"]
+        IS["IS管理规范"]
+        TRAIN["培训体系"]
+    end
+
+    L1 --> L2
+    L2 --> ESB
+    ESB --> L3
+    L3 --> L4
+    L4 --> L5

@@ -6,7 +6,7 @@
 
 - 主要交付物：数字化落地方案文档，存放于 `docs/`。
 - 参考输入：仓库根目录的 `intro.docx` 与 `artifact.pptx` 是用户提供的既有资料，方案起草前必须通读。
-- 当前阶段：交互式设计（interactive design）—— 与用户澄清方案范围、文档形态、技术栈与时间框架；需求确定后再起草正文。
+- 当前阶段：文档已生成（2026-08-17），待用户审阅与迭代。
 - 文档语言：中文；技术名词保留英文惯用写法。
 - 若后续进入原型/实施：先确认技术栈，并把真实 build/test 命令记录到本文件（替换下方 Repo state 的状态说明）。
 
@@ -15,7 +15,10 @@
 No source code, no manifests, and no build/test/lint configuration. Verified facts:
 
 - Git initialized 2026-08-17 (branch `main`) to track the document deliverable; no code toolchain exists — no build/test/lint commands.
-- Deliverable structure: `docs/康希诺数字化落地方案.md`（主文档）+ `docs/diagrams/*.mmd`（可编辑架构图源文件）。
+- Deliverable structure:
+  - `docs/康希诺数字化落地方案.md` — 主文档（5章：执行摘要/现状与机会/建设方向/实施路径/预期效果）
+  - `docs/diagrams/02-目标架构总览.mmd` — 架构总览（聚焦数据治理/AI基建/私有云基座）
+  - `docs/diagrams/04-业务价值链路.mmd` — 建设方向→能力提升→业务效果传导路径
 - Work layout: `.omo/research/`（事实核查研究输入）、`.omo/drafts/`（章节草稿、样式规范与验收清单，作为事实纪律证据链保留）、`.omo/` 为 OpenCode agent session state — 不属于最终交付物。
 
 ## Working rules for this repo

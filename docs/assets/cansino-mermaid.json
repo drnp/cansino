@@ -1,0 +1,45 @@
+{
+  "theme": "base",
+  "themeVariables": {
+    "primaryColor": "#2563EB",
+    "primaryTextColor": "#0F172A",
+    "primaryBorderColor": "#1E40AF",
+    "secondaryColor": "#F0F7FF",
+    "secondaryTextColor": "#1E293B",
+    "secondaryBorderColor": "#DBEAFE",
+    "tertiaryColor": "#ECFDF5",
+    "tertiaryTextColor": "#065F46",
+    "tertiaryBorderColor": "#A7F3D0",
+    "lineColor": "#64748B",
+    "textColor": "#1E293B",
+    "mainBkg": "#FFFFFF",
+    "nodeBorder": "#2563EB",
+    "clusterBkg": "#F8FAFC",
+    "clusterBorder": "#E2E8F0",
+    "titleColor": "#0F172A",
+    "fontFamily": "Inter, SF Pro Display, Helvetica Neue, PingFang SC, Microsoft YaHei",
+    "fontSize": "13px",
+    "borderRadius": "8"
+  },
+  "flowchart": {
+    "htmlLabels": true,
+    "curve": "linear",
+    "padding": 8,
+    "nodeSpacing": 22,
+    "rankSpacing": 32,
+    "diagramPadding": 10
+  },
+  "sequence": {
+    "mirrorActors": false,
+    "actorFontSize": 13,
+    "messageFontSize": 12
+  },
+  "gantt": {
+    "titleTopMargin": 18,
+    "barHeight": 20,
+    "barGap": 6,
+    "topPadding": 30,
+    "leftPadding": 90,
+    "gridLineStartPadding": 28
+  }
+}
